@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Song List</title>
+</head>
+<body>
+    <h1>JSON Song List</h1>
+    <pre id="json-output"></pre>
+
+    <script>
+        // Define JSON object
+        const songs = [
+            { "title": "Bohemian Rhapsody", "artist": "Queen", "year": 1975, "genres": ["rock"] },
+            { "title": "Thriller", "artist": "Michael Jackson", "year": 1982, "genres": ["pop"] },
+            { "title": "Smells Like Teen Spirit", "artist": "Nirvana", "year": 1991, "genres": ["rock", "grunge"] },
+            { "title": "Hotel California", "artist": "Eagles", "year": 1977, "genres": ["rock"] },
+            { "title": "Like a Rolling Stone", "artist": "Bob Dylan", "year": 1965, "genres": ["folk", "rock"] },
+            { "title": "Uptown Funk", "artist": "Mark Ronson", "year": 2014, "genres": ["pop", "funk"] },
+            { "title": "Rolling in the Deep", "artist": "Adele", "year": 2010, "genres": ["pop"] },
+            { "title": "Enter Sandman", "artist": "Metallica", "year": 1991, "genres": ["metal"] }
+        ];
+
+        // Convert JSON object to a string and display it
+        document.getElementById("json-output").textContent = JSON.stringify(songs, null, 4);
+    </script>
+</body>
+</html>
